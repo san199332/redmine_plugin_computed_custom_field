@@ -2,7 +2,7 @@ module ComputedCustomField
   def self.patch_models
     models = [
       Enumeration, Group, Issue, Project,
-      TimeEntry, User, Version
+      TimeEntry, User, Version, CustomEntity
     ]
     models.each do |model|
       if model.included_modules
